@@ -1,0 +1,145 @@
+{
+  "app": {
+    "package": "external_rest_api_sample_app",
+    "description": {
+      "value": "Connects ZenDesk to Dubspot's API.",
+      "title": "app description"
+    },
+    "name": {
+      "value": "Dubspot Admin",
+      "title": "app name"
+    },
+    "parameters": {
+      "email": {
+        "label": {
+          "value": "Email",
+          "title": "Label for the Dubspot email field when the user is installing the App."
+        },
+        "helpText": {
+          "value": "The email address you use to log into dubspot.com",
+          "title": "Text field below email explaining to the user where it will be used."
+        }
+      },
+      "password": {
+        "label": {
+          "value": "Password",
+          "title": "Label for the Dubspot password field when the user is installing the App."
+        },
+        "helpText": {
+          "value": "The password you use to log into dubspot.com",
+          "title": "Text field below password explaining to the user where it will be used."
+        }
+      }
+    }
+  },
+
+  "edit_form": {
+    "value": "Enter User Details",
+    "title": "Form title for creating a user."
+  },
+
+  "update_form": {
+    "value": "Update User Details",
+    "title": "Form title for updating a user's details"
+  },
+
+  "label_name": {
+    "value": "Name",
+    "title": "Label for name input/info field"
+  },
+
+  "label_age": {
+    "value": "Age",
+    "title": "Label for age input/info field"
+  },
+
+  "label_birthday": {
+    "value": "Birthday",
+    "title": "Label for birthday input/info field"
+  },
+
+  "label_friends": {
+    "value": "Friends",
+    "title": "Label for friends input/info field"
+  },
+
+  "label_married": {
+    "value": "Married",
+    "title": "Label for married input/info field"
+  },
+
+  "label_id": {
+    "value": "ID",
+    "title": "Label for id info field"
+  },
+
+  "label_firstname": {
+    "value": "Firstname",
+    "title": "Label for firstname info field"
+  },
+
+  "label_lastname": {
+    "value": "Lastname",
+    "title": "Label for lastname info field"
+  },
+
+  "label_btn_get_no_auth": {
+    "value": "A simple REST GET call to iheartquotes API:",
+    "title": "Label for the Get (No Auth) button"
+  },
+
+  "label_btn_get_auth": {
+    "value": "A REST GET call to teachmyapi:",
+    "title": "Label for the Get (Auth) button"
+  },
+
+  "label_btn_post": {
+    "value": "A REST POST call to teachmyapi:",
+    "title": "Label for the post button"
+  },
+
+  "label_btn_put": {
+    "value": "A REST PUT call to teachmyapi:",
+    "title": "Label for the put button"
+  },
+
+  "btn_go_back": {
+    "value": "Go Back",
+    "title": "Message displayed on the button that navigates back to the start page."
+  },
+
+  "btn_close": {
+    "value": "Close",
+    "title": "Message displayed on the close button in modal"
+  },
+
+  "btn_save": {
+    "value": "Save changes",
+    "title": "Message displayed on the save button in modal"
+  },
+
+  "btn_put": {
+    "value": "PUT (Auth)",
+    "title": "Message displayed on the put button in start page"
+  },
+
+  "btn_post": {
+    "value": "POST (Auth)",
+    "title": "Message displayed on the post button in start page"
+  },
+
+  "btn_get_auth": {
+    "value": "GET (Auth)",
+    "title": "Message displayed on the get with auth button in start page"
+  },
+
+  "btn_get_no_auth": {
+    "value": "GET (No Auth)",
+    "title": "Message displayed on the get no auth button in start page"
+  },
+
+  "display_married": {
+    "value": "married",
+    "title": "Message displayed in the user info field if the user is married."
+  }
+}

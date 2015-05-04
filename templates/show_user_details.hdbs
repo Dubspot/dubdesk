@@ -1,0 +1,30 @@
+{{#if user.id}}
+  <ul class="nav nav-list pull-left">
+    <li class="nav-header">User Actions</li>
+    <li><a href="http://admin.dubspot.com/users/{{user.id}}" target="_blank">View in Admin Panel</a></li>
+    <li><a class="show_enrollments">Enrollments</a></li>
+    <li><a href="http://admin.dubspot.com/users/{{user.id}}/reset" target="_blank" onclick='return confirm("Are you sure you want to reset {{ user.firstname }}&#39;s password?")'>Reset password</a></li>
+    <!-- <li><a href="#" >Suspend</a></li> -->
+  </ul>
+
+
+  <ul class="nav nav-list pull-right">
+    <li class="nav-header">Online School Accounts</li>
+    {{#if user.moodle_user_id }}
+      <li><a href="http://online.dubspot.com/classes/user/view.php?id={{ user.moodle_user_id }}" target="_blank">DSO 1 Profile</a></li>
+    {{/if }}
+    {{#if user.moodle2_user_id }}
+      <li><a href="http://dso.dubspot.com/user/view.php?id={{ user.moodle2_user_id }}" target="_blank">DSO 2 Profile</a></li>
+    {{else }}
+      <li><a href="http://admin.dubspot.com/users/{{ user.id }}/create_dso_account" target="_blank">Create DSO 2 Account</a></li>
+    {{/if }}
+  </ul>
+
+  <div class="clearfix"></div>
+
+  <a href="http://admin.dubspot.com/users/{{user.id}}/choose_courses" target="_blank" class="btn btn-success cta">Enroll into courses</a>
+  <br>
+{{else}}
+  <span>No Dubspot account found.</span>
+  <a href="#" target="_blank" class="btn btn-success btn-block cta">Create Dubspot account</a>
+{{/if}}

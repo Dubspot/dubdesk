@@ -1,0 +1,49 @@
+<h3>{{ user.firstname }}'s Enrollments</h3>
+<br>
+
+{{#if programs}}
+	<h4>Programs</h4>
+	<hr>
+	{{#each programs}}
+		<dl class="enrollments">
+	  	<dt>
+	  		<a href="http://admin.dubspot.com/program_instances/{{id}}">{{title}} </a>
+	  		<span class="label label-warning instance-location">{{ location }}</span>
+	  	</dt>
+		  <dd>
+		  	{{ start_date }} - {{ end_date }}
+		  </dd>
+		  <dd>
+		  {{#each weekdays}}
+				{{.}}
+		  {{/each}}
+			{{ start_time }} - {{ end_time}}
+		  </dd>
+		</dl>
+	{{/each}}
+{{else}}
+	<span>{{ user.firstname }} is not enrolled in any Programs.</span>
+{{/if}}
+<br>
+{{#if courses}}
+	<h4>Courses</h4>
+	<hr>
+	{{#each courses}}
+		<dl class="enrollments">
+	  	<dt>
+	  		<a href="http://admin.dubspot.com/course_instances/{{id}}">{{title}} </a>
+	  		<span class="label label-warning instance-location">{{ location }}</span>
+	  	</dt>
+		  <dd>
+		  	{{ start_date }}
+		  </dd>
+		</dl>
+	{{/each}}
+{{else}}
+	<span>{{ user.firstname }} is not enrolled in any Courses.</span>
+{{/if}}
+
+<br><br>
+<a class="back_to_start">Back</a>
+
+
